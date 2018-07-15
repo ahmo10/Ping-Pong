@@ -17,17 +17,13 @@ header {
 }
 .mainAside{
   background-color: #035609;
-  width: 300px;
-}
+  width: 400px;
+  margin-left: -200px;
+  }
 
-.side-menu{
-    background-color: cyan;
-    width: 500px;
-
-}
 ul {
     list-style-type: none;
   }
 .mainContainer{
-    margin-left: 500px;
+    margin-left: 100px;
 }
