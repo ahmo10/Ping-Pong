@@ -23,5 +23,13 @@ function enterNumber(number){
       return "pingpong"
 
     }
-    
+    return divisiblebyFive(number)
+  }
+
+    function divisiblebyFive(number) {
+      if (number % 5 === 0) {
+        return "pong"
+
+      }
+      return number;
     }
