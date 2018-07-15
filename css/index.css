@@ -1,0 +1,11 @@
+body {
+    background-color: grey;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #88839d;
+    height: 300px;
+}

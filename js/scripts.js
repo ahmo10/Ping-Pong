@@ -5,7 +5,6 @@ function enterNumber(number) {
   }
 
   for (var count = 1; count<= number; count++) {
-    
     if (count%3===0 && count%5===0) {
       document.write("PingPong"+ "<br>");
       continue;
