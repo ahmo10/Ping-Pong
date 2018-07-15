@@ -1,24 +1,20 @@
-function enterNumber(number) {
-
-  while (isNaN(parseInt(number))) {
-    number= parseInt(prompt("Please enter a number: "));
+function enterNumber(number){
+  var userInput = document.getElementById('number').value
+  var results = document.getElementById('results')
+  var listElement = document.createElement('ul')
+  results.appendChild(listElement)
+  var inputValue = parseInt(userInput)
+  for (var count = 1; count <= inputValue; count++) {
+    var listItem = document.createElement('li');
+    listItem.innerHTML = divisiblebyThree(count);
+    listElement.appendChild(listItem)
   }
+}
 
-  for (var count = 1; count<= number; count++) {
-    if (count%3===0 && count%5===0) {
-      document.write("PingPong"+ "<br>");
-      continue;
+  function divisiblebyThree(number) {
+    if (number % 3 === 0) {
+      return "ping"
+
     }
-     else if (count%3===0) {
-      document.write("Ping" + "<br>");
-      continue;
+  
     }
-    else if (count%5===0 ) {
-      document.write("Pong" + "<br>");
-      continue;
-    }  else {
-        document.write(count + "<br>");
-        continue;
-      }
-    }
-  }
