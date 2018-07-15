@@ -16,5 +16,12 @@ function enterNumber(number){
       return "ping"
 
     }
-  
+    return divisiblebyFifteen(number);
+  }
+  function divisiblebyFifteen(number) {
+    if (number % 3 === 0 && number % 5 === 0) {
+      return "pingpong"
+
+    }
+    
     }
